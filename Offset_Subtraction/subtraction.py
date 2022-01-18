@@ -96,6 +96,7 @@ def Subtraction(viewer: 'napari.viewer.Viewer', image: 'napari.layers.Image', Op
                    LayerdataTuple=list(viewer.layers[image.name].as_layer_data_tuple())                  
                    LayerdataTuple[0]=img_data
                    LayerdataTuple[1]['name']=image.name+'_Offset_Subtraction'
+                   LayerdataTuple[1]['visible']=True
                    LayerdataTuple_new=tuple(LayerdataTuple)
                    
                   
